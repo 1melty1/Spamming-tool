@@ -65,6 +65,7 @@ class Spamming(threading.Thread):
     def run(self):
         while self.program_running:
             while self.running:
+                global delay
                 if time_random_or_not == "y" :
                     delay = uniform(time_random_lower_limit, time_random_upper_limit)
                     print(f"Current delay is : {delay}s")
