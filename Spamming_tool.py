@@ -68,7 +68,7 @@ class Spamming(threading.Thread):
                 if time_random_or_not == "y" :
                     delay = uniform(time_random_lower_limit, time_random_upper_limit)
                     print(f"Current delay is : {delay}s")
-                keyboard.type(message_list[randrange(1, total_variation)])
+                keyboard.type(message_list[randrange(0, total_variation)])
                 time.sleep(delay)
                 keyboard.press(Key.enter)
                 keyboard.release(Key.enter)
